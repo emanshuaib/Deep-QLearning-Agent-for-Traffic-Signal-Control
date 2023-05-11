@@ -1,0 +1,8 @@
+tensorflow
+numpy
+traci
+configparser
+pydot
+pydotplus
+sumolib
+matplotlib

@@ -10,6 +10,7 @@ from tensorflow.keras import losses
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.utils import plot_model
 from tensorflow.keras.models import load_model
+from tensorflow.keras.callbacks import TensorBoard
 
 
 class TrainModel:
@@ -19,7 +20,6 @@ class TrainModel:
         self._batch_size = batch_size
         self._learning_rate = learning_rate
         self._model = self._build_model(num_layers, width)
-
 
     def _build_model(self, num_layers, width):
         """
@@ -32,7 +32,7 @@ class TrainModel:
         outputs = layers.Dense(self._output_dim, activation='linear')(x)
 
         model = keras.Model(inputs=inputs, outputs=outputs, name='my_model')
-        model.compile(loss=losses.mean_squared_error, optimizer=Adam(lr=self._learning_rate))
+        model.compile(loss=losses.mean_squared_error, optimizer=Adam(learning_rate=self._learning_rate))
         return model
     
 
@@ -55,11 +55,16 @@ class TrainModel:
         """
         Train the nn using the updated q-values
         """
-        self._model.fit(states, q_sa, epochs=1, verbose=0)
+        file= 'model_logs'
+
+        tensorboard = TensorBoard(log_dir="models\\model_18\\logs\\{file_name}".format(file_name=file))
+
+        self._model.fit(states, q_sa, epochs=1, verbose=0, callbacks=[tensorboard])
 
 
     def save_model(self, path):
         """
+
         Save the current model in the folder as h5 file and a model architecture summary as png
         """
         self._model.save(os.path.join(path, 'trained_model.h5'))
@@ -79,6 +84,14 @@ class TrainModel:
     @property
     def batch_size(self):
         return self._batch_size
+
+    # @property
+    # def model_path(self):
+    #     return self._model_path
+    #
+    # @property
+    # def log_file_name(self):
+    #     return self.log_file_name
 
 
 class TestModel:
