@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2023-05-10 22:56:13 by Eclipse SUMO netedit Version 1.14.1
+<!-- generated on 2023-05-12 11:57:49 by Eclipse SUMO netedit Version 1.14.1
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
-        <sumo-net-file value="C:\Users\alsah\Sumo\2023-05-09-23-48-02\riffa_sanad.net.xml"/>
+        <sumo-net-file value="C:\Users\alsah\PycharmProjects\Deep-QLearning-Agent-for-Traffic-Signal-Control\TLCS\intersection\riffa_sanad.net.xml"/>
     </input>
 
     <output>
-        <output-file value="C:\Users\alsah\Sumo\2023-05-09-23-48-02\riffa_sanad.net.xml"/>
+        <output-file value="C:\Users\alsah\PycharmProjects\Deep-QLearning-Agent-for-Traffic-Signal-Control\TLCS\intersection\riffa_sanad.net.xml"/>
         <output.street-names value="true"/>
     </output>
 
@@ -690,22 +690,17 @@
     </edge>
     <edge id=":TL_11" function="internal">
         <lane id=":TL_11_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="12.60" length="45.99" shape="733.98,1045.32 741.25,1051.67 748.59,1063.53 753.35,1076.21 752.87,1085.05"/>
+        <lane id=":TL_11_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="11.93" length="41.09" shape="732.90,1048.34 739.94,1053.92 746.77,1064.08 751.02,1075.06 750.31,1083.13"/>
+        <lane id=":TL_11_2" index="2" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="11.23" length="36.26" shape="731.83,1051.36 738.63,1056.16 744.95,1064.63 748.69,1073.92 747.75,1081.21"/>
     </edge>
-    <edge id=":TL_12" function="internal">
-        <lane id=":TL_12_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="15.28" length="46.46" shape="732.90,1048.34 745.53,1053.36 755.84,1058.65 765.34,1063.35 775.52,1066.58"/>
+    <edge id=":TL_14" function="internal">
+        <lane id=":TL_14_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="38.13" shape="730.96,1068.62 753.02,1037.47"/>
+        <lane id=":TL_14_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="38.13" shape="733.52,1070.54 755.56,1039.42"/>
+        <lane id=":TL_14_2" index="2" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="38.13" shape="736.08,1072.46 758.10,1041.36"/>
     </edge>
-    <edge id=":TL_13" function="internal">
-        <lane id=":TL_13_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="11.93" length="41.09" shape="732.90,1048.34 739.94,1053.92 746.77,1064.08 751.02,1075.06 750.31,1083.13"/>
-        <lane id=":TL_13_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="11.23" length="36.26" shape="731.83,1051.36 738.63,1056.16 744.95,1064.63 748.69,1073.92 747.75,1081.21"/>
-    </edge>
-    <edge id=":TL_15" function="internal">
-        <lane id=":TL_15_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="38.13" shape="730.96,1068.62 753.02,1037.47"/>
-        <lane id=":TL_15_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="38.13" shape="733.52,1070.54 755.56,1039.42"/>
-        <lane id=":TL_15_2" index="2" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="38.13" shape="736.08,1072.46 758.10,1041.36"/>
-    </edge>
-    <edge id=":TL_18" function="internal">
-        <lane id=":TL_18_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="16.02" length="39.85" shape="740.67,1075.90 747.60,1068.74 755.83,1064.28 765.34,1062.51 776.15,1063.44"/>
-        <lane id=":TL_18_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="15.29" length="36.23" shape="743.23,1077.82 749.52,1071.34 757.00,1067.31 765.67,1065.72 775.52,1066.58"/>
+    <edge id=":TL_17" function="internal">
+        <lane id=":TL_17_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="16.02" length="39.85" shape="740.67,1075.90 747.60,1068.74 755.83,1064.28 765.34,1062.51 776.15,1063.44"/>
+        <lane id=":TL_17_1" index="1" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="15.29" length="36.23" shape="743.23,1077.82 749.52,1071.34 757.00,1067.31 765.67,1065.72 775.52,1066.58"/>
     </edge>
     <edge id=":cluster_10262613684_6563445081_0" function="internal">
         <lane id=":cluster_10262613684_6563445081_0_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="13.89" length="17.11" shape="973.06,1116.11 970.87,1119.36 969.59,1123.60 968.80,1128.13 968.09,1132.23"/>
@@ -1918,27 +1913,26 @@
         <request index="2" response="0000" foes="0000" cont="0"/>
         <request index="3" response="0000" foes="0000" cont="0"/>
     </junction>
-    <junction id="TL" type="traffic_light" x="755.38" y="1061.14" incLanes="E2TL_0 E2TL_1 E2TL_2 S2TL_0 S2TL_1 S2TL_2 S2TLT_0 S2TLT_1 W2TL_0 W2TL_1 W2TL_2 W2TL_3 N2TL_0 N2TL_1 N2TL_2 N2TLT_0 N2TLT_1" intLanes=":TL_0_0 :TL_0_1 :TL_2_0 :TL_2_1 :TL_4_0 :TL_4_1 :TL_4_2 :TL_7_0 :TL_7_1 :TL_9_0 :TL_9_1 :TL_11_0 :TL_12_0 :TL_13_0 :TL_13_1 :TL_15_0 :TL_15_1 :TL_15_2 :TL_18_0 :TL_18_1" shape="773.40,1077.24 777.08,1058.73 775.17,1057.94 774.74,1057.34 774.66,1056.61 774.92,1055.74 775.54,1054.74 751.75,1036.50 749.68,1038.73 747.36,1040.36 744.79,1041.38 741.97,1041.79 738.90,1041.60 735.59,1040.80 727.77,1062.78 729.92,1064.01 730.43,1064.78 730.56,1065.64 730.31,1066.60 729.68,1067.66 754.15,1086.01 756.91,1082.77 759.86,1080.24 762.98,1078.42 766.27,1077.31 769.75,1076.92">
-        <request index="0"  response="00111000000000000000" foes="11111110100111110000" cont="0"/>
-        <request index="1"  response="00111000000000000000" foes="11111110100111110000" cont="0"/>
-        <request index="2"  response="11111001011001110000" foes="11111001011111110000" cont="0"/>
-        <request index="3"  response="11111001011001110000" foes="11111001011111110000" cont="0"/>
-        <request index="4"  response="00000000000000000011" foes="11000111111000001111" cont="0"/>
-        <request index="5"  response="00000000000000000011" foes="11000111111000001111" cont="0"/>
-        <request index="6"  response="00000000000000000011" foes="11000111111000001111" cont="0"/>
-        <request index="7"  response="00111001011000001111" foes="00111111111000001111" cont="0"/>
-        <request index="8"  response="00111001011000001111" foes="00111111111000001111" cont="0"/>
-        <request index="9"  response="00111000000001110000" foes="11111000000111111100" cont="0"/>
-        <request index="10" response="00111000000001110000" foes="11111000000111111100" cont="0"/>
-        <request index="11" response="00111001000111110011" foes="11111001000111110011" cont="0"/>
-        <request index="12" response="00111000000001110000" foes="11111000100111111100" cont="0"/>
-        <request index="13" response="00111000000111110011" foes="11111000000111110011" cont="0"/>
-        <request index="14" response="00111000000111110011" foes="11111000000111110011" cont="0"/>
-        <request index="15" response="00000000000000000000" foes="00000111111110001111" cont="0"/>
-        <request index="16" response="00000000000000000000" foes="00000111111110001111" cont="0"/>
-        <request index="17" response="00000000000000000000" foes="00000111111110001111" cont="0"/>
-        <request index="18" response="00000111111001110011" foes="00000111111001111111" cont="0"/>
-        <request index="19" response="00000111111001110011" foes="00000111111001111111" cont="0"/>
+    <junction id="TL" type="traffic_light" x="755.38" y="1061.14" incLanes="E2TL_0 E2TL_1 E2TL_2 S2TL_0 S2TL_1 S2TL_2 S2TLT_0 S2TLT_1 W2TL_0 W2TL_1 W2TL_2 W2TL_3 N2TL_0 N2TL_1 N2TL_2 N2TLT_0 N2TLT_1" intLanes=":TL_0_0 :TL_0_1 :TL_2_0 :TL_2_1 :TL_4_0 :TL_4_1 :TL_4_2 :TL_7_0 :TL_7_1 :TL_9_0 :TL_9_1 :TL_11_0 :TL_11_1 :TL_11_2 :TL_14_0 :TL_14_1 :TL_14_2 :TL_17_0 :TL_17_1" shape="773.40,1077.24 777.08,1058.73 775.17,1057.94 774.74,1057.34 774.66,1056.61 774.92,1055.74 775.54,1054.74 751.75,1036.50 749.68,1038.73 747.36,1040.36 744.79,1041.38 741.97,1041.79 738.90,1041.60 735.59,1040.80 727.77,1062.78 729.92,1064.01 730.43,1064.78 730.56,1065.64 730.31,1066.60 729.68,1067.66 754.15,1086.01 756.91,1082.77 759.86,1080.24 762.98,1078.42 766.27,1077.31 769.75,1076.92">
+        <request index="0"  response="0011100000000000000" foes="1111111100111110000" cont="0"/>
+        <request index="1"  response="0011100000000000000" foes="1111111100111110000" cont="0"/>
+        <request index="2"  response="1111100011001110000" foes="1111100011111110000" cont="0"/>
+        <request index="3"  response="1111100011001110000" foes="1111100011111110000" cont="0"/>
+        <request index="4"  response="0000000000000000011" foes="1100011111000001111" cont="0"/>
+        <request index="5"  response="0000000000000000011" foes="1100011111000001111" cont="0"/>
+        <request index="6"  response="0000000000000000011" foes="1100011111000001111" cont="0"/>
+        <request index="7"  response="0011100011000001111" foes="0011111111000001111" cont="0"/>
+        <request index="8"  response="0011100011000001111" foes="0011111111000001111" cont="0"/>
+        <request index="9"  response="0011100000001110000" foes="1111100000111111100" cont="0"/>
+        <request index="10" response="0011100000001110000" foes="1111100000111111100" cont="0"/>
+        <request index="11" response="0011100000111110011" foes="1111100000111110011" cont="0"/>
+        <request index="12" response="0011100000111110011" foes="1111100000111110011" cont="0"/>
+        <request index="13" response="0011100000111110011" foes="1111100000111110011" cont="0"/>
+        <request index="14" response="0000000000000000000" foes="0000011111110001111" cont="0"/>
+        <request index="15" response="0000000000000000000" foes="0000011111110001111" cont="0"/>
+        <request index="16" response="0000000000000000000" foes="0000011111110001111" cont="0"/>
+        <request index="17" response="0000011111001110011" foes="0000011111001111111" cont="0"/>
+        <request index="18" response="0000011111001110011" foes="0000011111001111111" cont="0"/>
     </junction>
     <junction id="cluster_10262613684_6563445081" type="priority" x="968.57" y="1122.72" incLanes="1122065260_0 101417648#1_0 101417652#2_0" intLanes=":cluster_10262613684_6563445081_0_0 :cluster_10262613684_6563445081_9_0 :cluster_10262613684_6563445081_10_0 :cluster_10262613684_6563445081_3_0 :cluster_10262613684_6563445081_4_0 :cluster_10262613684_6563445081_5_0 :cluster_10262613684_6563445081_6_0 :cluster_10262613684_6563445081_7_0 :cluster_10262613684_6563445081_11_0" shape="975.94,1116.08 973.29,1113.99 971.40,1114.76 970.63,1114.71 969.98,1114.36 969.44,1113.72 969.02,1112.79 965.79,1113.24 966.49,1115.81 966.66,1117.81 966.30,1119.24 965.41,1120.10 963.98,1120.38 962.02,1120.08 960.41,1126.28 962.46,1127.27 963.09,1128.01 963.46,1128.91 963.56,1129.97 963.41,1131.19 969.65,1132.58 970.27,1128.70 970.49,1125.53 970.73,1122.89 971.44,1120.57 973.03,1118.36">
         <request index="0" response="000000000" foes="100010000" cont="0"/>
@@ -2245,11 +2239,11 @@
     <connection from="E2TL" to="TL2W" fromLane="1" toLane="1" via=":TL_0_1" tl="TL" linkIndex="1" dir="s" state="o"/>
     <connection from="E2TL" to="TL2S" fromLane="1" toLane="1" via=":TL_2_0" tl="TL" linkIndex="2" dir="l" state="o"/>
     <connection from="E2TL" to="TL2S" fromLane="2" toLane="2" via=":TL_2_1" tl="TL" linkIndex="3" dir="l" state="o"/>
-    <connection from="N2TL" to="TL2S" fromLane="0" toLane="0" via=":TL_15_0" tl="TL" linkIndex="15" dir="s" state="O"/>
-    <connection from="N2TL" to="TL2S" fromLane="1" toLane="1" via=":TL_15_1" tl="TL" linkIndex="16" dir="s" state="O"/>
-    <connection from="N2TL" to="TL2S" fromLane="2" toLane="2" via=":TL_15_2" tl="TL" linkIndex="17" dir="s" state="O"/>
-    <connection from="N2TLT" to="TL2E" fromLane="0" toLane="1" via=":TL_18_0" tl="TL" linkIndex="18" dir="L" state="o"/>
-    <connection from="N2TLT" to="TL2E" fromLane="1" toLane="2" via=":TL_18_1" tl="TL" linkIndex="19" dir="L" state="o"/>
+    <connection from="N2TL" to="TL2S" fromLane="0" toLane="0" via=":TL_14_0" tl="TL" linkIndex="15" dir="s" state="O"/>
+    <connection from="N2TL" to="TL2S" fromLane="1" toLane="1" via=":TL_14_1" tl="TL" linkIndex="16" dir="s" state="O"/>
+    <connection from="N2TL" to="TL2S" fromLane="2" toLane="2" via=":TL_14_2" tl="TL" linkIndex="17" dir="s" state="O"/>
+    <connection from="N2TLT" to="TL2E" fromLane="0" toLane="1" via=":TL_17_0" tl="TL" linkIndex="18" dir="L" state="o"/>
+    <connection from="N2TLT" to="TL2E" fromLane="1" toLane="2" via=":TL_17_1" tl="TL" linkIndex="19" dir="L" state="o"/>
     <connection from="S2TL" to="TL2N" fromLane="0" toLane="0" via=":TL_4_0" tl="TL" linkIndex="4" dir="s" state="o"/>
     <connection from="S2TL" to="TL2N" fromLane="1" toLane="1" via=":TL_4_1" tl="TL" linkIndex="5" dir="s" state="o"/>
     <connection from="S2TL" to="TL2N" fromLane="2" toLane="2" via=":TL_4_2" tl="TL" linkIndex="6" dir="s" state="o"/>
@@ -2269,9 +2263,8 @@
     <connection from="W2TL" to="TL2E" fromLane="0" toLane="0" via=":TL_9_0" tl="TL" linkIndex="9" dir="s" state="o"/>
     <connection from="W2TL" to="TL2E" fromLane="1" toLane="1" via=":TL_9_1" tl="TL" linkIndex="10" dir="s" state="o"/>
     <connection from="W2TL" to="TL2N" fromLane="1" toLane="0" via=":TL_11_0" tl="TL" linkIndex="11" dir="l" state="o"/>
-    <connection from="W2TL" to="TL2E" fromLane="2" toLane="2" via=":TL_12_0" tl="TL" linkIndex="12" dir="s" state="o"/>
-    <connection from="W2TL" to="TL2N" fromLane="2" toLane="1" via=":TL_13_0" tl="TL" linkIndex="13" dir="l" state="o"/>
-    <connection from="W2TL" to="TL2N" fromLane="3" toLane="2" via=":TL_13_1" tl="TL" linkIndex="14" dir="l" state="o"/>
+    <connection from="W2TL" to="TL2N" fromLane="2" toLane="1" via=":TL_11_1" tl="TL" linkIndex="13" dir="l" state="o"/>
+    <connection from="W2TL" to="TL2N" fromLane="3" toLane="2" via=":TL_11_2" tl="TL" linkIndex="14" dir="l" state="o"/>
 
     <connection from=":100222850#0-AddedOffRampNode_0" to="100222850#0-AddedOffRampEdge" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":100222850#0-AddedOffRampNode_0" to="100222850#0-AddedOffRampEdge" fromLane="1" toLane="1" dir="s" state="M"/>
@@ -2519,14 +2512,13 @@
     <connection from=":TL_9" to="TL2E" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":TL_9" to="TL2E" fromLane="1" toLane="1" dir="s" state="M"/>
     <connection from=":TL_11" to="TL2N" fromLane="0" toLane="0" dir="l" state="M"/>
-    <connection from=":TL_12" to="TL2E" fromLane="0" toLane="2" dir="s" state="M"/>
-    <connection from=":TL_13" to="TL2N" fromLane="0" toLane="1" dir="l" state="M"/>
-    <connection from=":TL_13" to="TL2N" fromLane="1" toLane="2" dir="l" state="M"/>
-    <connection from=":TL_15" to="TL2S" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":TL_15" to="TL2S" fromLane="1" toLane="1" dir="s" state="M"/>
-    <connection from=":TL_15" to="TL2S" fromLane="2" toLane="2" dir="s" state="M"/>
-    <connection from=":TL_18" to="TL2E" fromLane="0" toLane="1" dir="L" state="M"/>
-    <connection from=":TL_18" to="TL2E" fromLane="1" toLane="2" dir="L" state="M"/>
+    <connection from=":TL_11" to="TL2N" fromLane="1" toLane="1" dir="l" state="M"/>
+    <connection from=":TL_11" to="TL2N" fromLane="2" toLane="2" dir="l" state="M"/>
+    <connection from=":TL_14" to="TL2S" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":TL_14" to="TL2S" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":TL_14" to="TL2S" fromLane="2" toLane="2" dir="s" state="M"/>
+    <connection from=":TL_17" to="TL2E" fromLane="0" toLane="1" dir="L" state="M"/>
+    <connection from=":TL_17" to="TL2E" fromLane="1" toLane="2" dir="L" state="M"/>
     <connection from=":cluster_10262613684_6563445081_0" to="-101417652#2" fromLane="0" toLane="0" dir="s" state="M"/>
     <connection from=":cluster_10262613684_6563445081_1" to="-101417648#1" fromLane="0" toLane="0" via=":cluster_10262613684_6563445081_9_0" dir="L" state="m"/>
     <connection from=":cluster_10262613684_6563445081_9" to="-101417648#1" fromLane="0" toLane="0" dir="L" state="M"/>
