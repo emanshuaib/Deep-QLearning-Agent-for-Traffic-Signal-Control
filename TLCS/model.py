@@ -59,7 +59,7 @@ class TrainModel:
 
         tensorboard = TensorBoard(log_dir="models\\model_18\\logs\\{file_name}".format(file_name=file))
 
-        self._model.fit(states, q_sa, epochs=1, verbose=0, callbacks=[tensorboard])
+        self._model.fit(states, q_sa, epochs=1, verbose=1, callbacks=[tensorboard])
 
 
     def save_model(self, path):

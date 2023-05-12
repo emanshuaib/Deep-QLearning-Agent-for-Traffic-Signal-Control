@@ -2,17 +2,20 @@ import numpy as np
 import math
 import random
 
-def select_car_type():
-    car_types = ['standard_car', 'bus', 'truck', 'rescue']
-    probabilities = [0.7, 0.15, 0.10, 0.05]
-    selected_type = random.choices(car_types, probabilities)[0]
-    return selected_type
 
 
 class TrafficGenerator:
-    def __init__(self, max_steps, n_cars_generated):
+    def __init__(self, max_steps, n_cars_generated, standard_cars, rescue_cars, buses, trucks, standard_cars_p, rescue_cars_p, buses_p, trucks_p):
         self._n_cars_generated = n_cars_generated  # how many cars per episode
         self._max_steps = max_steps
+        self._standard_cars = standard_cars
+        self._rescue_cars = rescue_cars
+        self._buses = buses
+        self._trucks = trucks
+        self._standard_cars_p = standard_cars_p
+        self._rescue_cars_p = rescue_cars_p
+        self._buses_p = buses_p
+        self._trucks_p = trucks_p
 
     def generate_routefile(self, seed):
         """
@@ -66,17 +69,17 @@ class TrafficGenerator:
                 if straight_or_turn < 0.75:  # choose direction: straight or turn - 75% of times the car goes straight
                     route_straight = np.random.randint(1, 5)  # choose a random source & destination
                     if route_straight == 1:
-                        print('    <vehicle id="W_E_%i" type="%s" route="W_E" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, select_car_type(), step), file=routes)
+                        print('    <vehicle id="W_E_%i" type="%s" route="W_E" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, self.select_car_type(), step), file=routes)
                     elif route_straight == 2:
-                        print('    <vehicle id="E_W_%i" type="%s" route="E_W" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, select_car_type(), step), file=routes)
+                        print('    <vehicle id="E_W_%i" type="%s" route="E_W" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, self.select_car_type(), step), file=routes)
                     elif route_straight == 3:
-                        print('    <vehicle id="N_S_%i" type="%s" route="N_S" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, select_car_type(), step), file=routes)
+                        print('    <vehicle id="N_S_%i" type="%s" route="N_S" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, self.select_car_type(), step), file=routes)
                     else:
-                        print('    <vehicle id="S_N_%i" type="%s" route="S_N" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, select_car_type(), step), file=routes)
+                        print('    <vehicle id="S_N_%i" type="%s" route="S_N" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, self.select_car_type(), step), file=routes)
                 else:  # car that turn -25% of the time the car turns
                     route_turn = np.random.randint(1, 4)  # choose random source source & destination
                     if route_turn == 1:
-                        print('    <vehicle id="W_N_%i" type="standard_car" route="W_N" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
+                        print('    <vehicle id="W_N_%i" type="standard_car" route="W_N" depart="%s" departLane="random" departSpeed="5" />' % (car_counter, step), file=routes)
                     elif route_turn == 2:
                         print('    <vehicle id="N_E_%i" type="standard_car" route="N_E" depart="%s" departLane="random" departSpeed="10" />' % (car_counter, step), file=routes)
                     elif route_turn == 3:
@@ -86,3 +89,26 @@ class TrafficGenerator:
 
 
             print("</routes>", file=routes)
+
+    def select_car_type(self):
+        car_types = []
+        car_probabilities = []
+        if self._standard_cars:
+            car_types.append('standard_car')
+            car_probabilities.append(self._standard_cars_p)
+        if self._buses:
+            car_types.append('bus')
+            car_probabilities.append(self._buses_p)
+        if self._trucks:
+            car_types.append('truck')
+            car_probabilities.append(self._trucks_p)
+        if self._rescue_cars:
+            car_types.append('rescue')
+            car_probabilities.append(self._rescue_cars_p)
+
+        if len(car_types) < 1 or len(car_probabilities):
+            car_types = ['standard_car', 'bus', 'truck', 'rescue']
+            car_probabilities = [0.7, 0.15, 0.10, 0.05]
+
+        selected_type = random.choices(car_types, car_probabilities)[0]
+        return selected_type

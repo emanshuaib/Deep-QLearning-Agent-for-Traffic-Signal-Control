@@ -35,7 +35,15 @@ if __name__ == "__main__":
 
     TrafficGen = TrafficGenerator(
         config['max_steps'], 
-        config['n_cars_generated']
+        config['n_cars_generated'],
+        config['standard_cars'],
+        config['rescue_cars'],
+        config['buses'],
+        config['trucks'],
+        config['standard_cars_p'],
+        config['rescue_cars_p'],
+        config['buses_p'],
+        config['trucks_p']
     )
 
     Visualization = Visualization(
