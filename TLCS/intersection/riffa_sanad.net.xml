@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2023-05-12 23:33:42 by Eclipse SUMO netedit Version v1_17_0+0172-8b68beeaf46
+<!-- generated on 2023-05-13 01:33:48 by Eclipse SUMO netedit Version v1_17_0+0172-8b68beeaf46
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
-        <sumocfg-file value="/Users/eman.shuaib/Deep-QLearning-Agent-for-Traffic-Signal-Control/TLCS/intersection/sumo_config.sumocfg"/>
-        <additional-files value=""/>
-        <route-files value="/Users/eman.shuaib/Deep-QLearning-Agent-for-Traffic-Signal-Control/TLCS/intersection/episode_routes.rou.xml"/>
         <sumo-net-file value="/Users/eman.shuaib/Deep-QLearning-Agent-for-Traffic-Signal-Control/TLCS/intersection/riffa_sanad.net.xml"/>
     </input>
 
@@ -1499,7 +1496,7 @@
             <param key="origId" value="289415155"/>
         </lane>
     </edge>
-    <edge id="TL2N" from="TL" to="DNL" name="طريق الاستقلال السريع" priority="12" type="highway.primary" spreadType="center" shape="755.64,1075.96 727.21,1114.19">
+    <edge id="TL2N" from="TL" to="DNL" name="طريق الاستقلال السريع" priority="-1" type="highway.primary" spreadType="center" shape="755.64,1075.96 727.21,1114.19">
         <lane id="TL2N_0" index="0" disallow="tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="37.19" shape="752.87,1085.05 730.69,1114.88">
             <param key="origId" value="484028064"/>
         </lane>
@@ -1545,14 +1542,14 @@
     </edge>
 
     <tlLogic id="TL" type="static" programID="0" offset="0">
-        <phase duration="15" state="rrrrGGGGGrrrrrrrrrrr"/>
-        <phase duration="6"  state="rrrryyyyyrrrrrrrrrrr"/>
-        <phase duration="17" state="rrrrrrrrrrrrrrrGGGGG"/>
-        <phase duration="6"  state="rrrrrrrrrrrrrrryyyyy"/>
-        <phase duration="17" state="rrrrrrrrrGGgGGGrrrrr"/>
-        <phase duration="6"  state="rrrrrrrrryyyyyyrrrrr"/>
-        <phase duration="17" state="GGGGrrrrrrrrrrrrrrrr"/>
-        <phase duration="6"  state="yyyyrrrrrrrrrrrrrrrr"/>
+        <phase duration="100" state="rrrrGGGrrrrrrrrGGGrr"/>
+        <phase duration="100" state="rrrryyyrrrrrrrryyyrr"/>
+        <phase duration="100" state="rrrrrrrGGrrrrrrrrrGG"/>
+        <phase duration="100" state="rrrrrrryyrrrrrrrrryy"/>
+        <phase duration="100" state="GGrrrrrrrGGGGrrrrrrr"/>
+        <phase duration="100" state="yyrrrrrrryyyyrrrrrrr"/>
+        <phase duration="100" state="rrGGrrrrrrrrrGGrrrrr"/>
+        <phase duration="100" state="rryyrrrrrrrrryyrrrrr"/>
     </tlLogic>
 
     <junction id="100222850#0-AddedOffRampNode" type="priority" x="562.03" y="1298.47" incLanes="100222850#0_0 100222850#0_1 100222850#0_2" intLanes=":100222850#0-AddedOffRampNode_0_0 :100222850#0-AddedOffRampNode_0_1 :100222850#0-AddedOffRampNode_0_2 :100222850#0-AddedOffRampNode_0_3" shape="568.27,1298.10 557.97,1290.50 556.84,1293.43 556.93,1295.91 556.67,1297.26 555.79,1298.84 563.52,1304.54">

@@ -41,14 +41,14 @@ class TrainModel:
         Predict the action values from a single state
         """
         state = np.reshape(state, [1, self._input_dim])
-        return self._model.predict(state)
+        return self._model.predict(state, verbose=0)
 
 
     def predict_batch(self, states):
         """
         Predict the action values from a batch of states
         """
-        return self._model.predict(states)
+        return self._model.predict(states, verbose=0)
 
 
     def train_batch(self, states, q_sa):
@@ -57,9 +57,9 @@ class TrainModel:
         """
         file= 'model_logs'
 
-        tensorboard = TensorBoard(log_dir="models\\model_18\\logs\\{file_name}".format(file_name=file))
-
-        self._model.fit(states, q_sa, epochs=1, verbose=1, callbacks=[tensorboard])
+        # tensorboard = TensorBoard(log_dir="models\\model_18\\logs\\{file_name}".format(file_name=file))
+        # , callbacks=[tensorboard]
+        self._model.fit(states, q_sa, epochs=1, verbose=0)
 
 
     def save_model(self, path):
