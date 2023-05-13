@@ -76,7 +76,7 @@ if __name__ == "__main__":
         episode += 1
 
     print("\n----- Start time:", timestamp_start)
-    print("----- End time:", datetime.datetime.now())
+    print("------- End time:", datetime.datetime.now())
     print("----- Session info saved at:", path)
 
     Model.save_model(path)
