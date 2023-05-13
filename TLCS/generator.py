@@ -91,6 +91,7 @@ class TrafficGenerator:
             print("</routes>", file=routes)
 
     def select_car_type(self):
+        # simple function to control traffic generation
         car_types = []
         car_probabilities = []
         if self._standard_cars:
